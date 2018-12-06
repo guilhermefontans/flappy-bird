@@ -11,8 +11,8 @@ extents = Vector2( 108.768, 1110.17 )
 [sub_resource type="SegmentShape2D" id=2]
 
 custom_solver_bias = 0.0
-a = Vector2( 1.20172, -203.517 )
-b = Vector2( 1.20172, 182.928 )
+a = Vector2( 0.334412, -233.062 )
+b = Vector2( 3.86272, 236.32 )
 
 [node name="Cano" type="Node2D"]
 
@@ -22,14 +22,14 @@ velocidade = -400
 
 [node name="Cima" type="Sprite" parent="."]
 
-transform/pos = Vector2( 0, -1225 )
+transform/pos = Vector2( 0, -1250 )
 transform/scale = Vector2( 3, 8 )
 texture = ExtResource( 2 )
 flip_v = true
 
 [node name="Baixo" type="Sprite" parent="."]
 
-transform/pos = Vector2( 0, 1225 )
+transform/pos = Vector2( 0, 1250 )
 transform/scale = Vector2( 3, 8 )
 texture = ExtResource( 2 )
 
@@ -37,10 +37,10 @@ texture = ExtResource( 2 )
 
 input/pickable = true
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1, 0, 0, 0.93735, 1.26318, 1230.31 )
+shapes/0/transform = Matrix32( 1, 0, 0, 0.93735, 0, 1270 )
 shapes/0/trigger = false
 shapes/1/shape = SubResource( 1 )
-shapes/1/transform = Matrix32( 1, 0, 0, 0.93735, 0.229919, -1250.56 )
+shapes/1/transform = Matrix32( 1, 0, 0, 0.93735, 0, -1270 )
 shapes/1/trigger = false
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -49,7 +49,7 @@ angular_damp = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 
-transform/pos = Vector2( 1.26318, 1230.31 )
+transform/pos = Vector2( 0, 1270 )
 transform/scale = Vector2( 1, 0.93735 )
 shape = SubResource( 1 )
 trigger = false
@@ -57,7 +57,7 @@ _update_shape_index = 0
 
 [node name="CollisionShape2D1" type="CollisionShape2D" parent="Area2D"]
 
-transform/pos = Vector2( 0.229919, -1250.56 )
+transform/pos = Vector2( 0, -1270 )
 transform/scale = Vector2( 1, 0.93735 )
 shape = SubResource( 1 )
 trigger = false
